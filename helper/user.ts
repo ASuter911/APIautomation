@@ -49,7 +49,7 @@ export function signUp(user:User):Promise<any> {
         })
     })
 }
-export function signUp2(user:User) {
+export function signUp2(user) {
     return request.post('users/signup').send(user).expect(201)
 }
 export function login(user:User):Promise<any> {
@@ -61,7 +61,7 @@ export function login(user:User):Promise<any> {
     })
 }
 
-export function login2(user:User){
+export function login2(user){
     return request.post('users/signup').send(user).expect(201)
     }
 
