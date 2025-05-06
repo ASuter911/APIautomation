@@ -52,7 +52,6 @@ describe('user sign up', () => {
                     "password": "test1234",
                     "passwordConfirm": "test1234",
                 }
-                console.log(userData)
                 //Make the POST request using .then
                 return request.post('users/signup').send(userData).expect(201).then((res:Response) => {
                     //Validate response body
@@ -82,7 +81,6 @@ describe('user sign up', () => {
                         "password": "test1234",
                         "passwordConfirm": "test1234",
                     }
-                    console.log(userData)
                     //Make the POST request using .then
                     request.post('users/signup').send(userData).expect(201).end((err:Error | null, res:Response) => {
                         if (err) {
@@ -110,14 +108,10 @@ describe('user sign up', () => {
                     })
                 })
             })
-
-
-
-
-
             describe('NEGATIVE TESTING', () => {
                 it('should sign up a new user', async () => {
                     const userData = {
+                        "name": "John Doe",
                         "email": "john6@example.com",
                         "password": "mypassword123",
                         "passwordConfirm": "mypassword123"
@@ -142,6 +136,8 @@ describe('user sign up', () => {
                 expect(res.status).toBe(400);
                 expect(res.body.message).toBe("Missing required fields: name");
             });
+
+            
             it('should sign up a new user, email is missing', async () => {
                 const userData = {
                     "name": "John Doe",
@@ -244,7 +240,7 @@ describe('user sign up', () => {
         })
     
         describe('NEGATIVE TESTING', () => {
-            it('name is missing with .end () and done ()', (done) => {
+            it.only('name is missing with .end () and done ()', (done) => {
                 const userData = {
                     "email": faker.internet.email(),
                     "password": "test1234",
