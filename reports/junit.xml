@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="7" failures="0" errors="0" time="3.289">
+  <testsuite name="USER SIGNUP AND LOGIN" errors="0" failures="0" skipped="0" timestamp="2025-05-06T20:59:11" time="3.165" tests="7">
+    <testcase classname="USER SIGNUP AND LOGIN POSITIVE TESTING should signup, login and delete the user" name="USER SIGNUP AND LOGIN POSITIVE TESTING should signup, login and delete the user" time="0.713">
+    </testcase>
+    <testcase classname="USER SIGNUP AND LOGIN POSITIVE TESTING Should signup, login and delete the user .then()" name="USER SIGNUP AND LOGIN POSITIVE TESTING Should signup, login and delete the user .then()" time="0.7">
+    </testcase>
+    <testcase classname="USER SIGNUP AND LOGIN POSITIVE TESTING Should sign up, login and delete the user .end" name="USER SIGNUP AND LOGIN POSITIVE TESTING Should sign up, login and delete the user .end" time="0.697">
+    </testcase>
+    <testcase classname="USER SIGNUP AND LOGIN NEGATIVE TESTING login with invalid email" name="USER SIGNUP AND LOGIN NEGATIVE TESTING login with invalid email" time="0.026">
+    </testcase>
+    <testcase classname="USER SIGNUP AND LOGIN NEGATIVE TESTING login with invalid password" name="USER SIGNUP AND LOGIN NEGATIVE TESTING login with invalid password" time="0.027">
+    </testcase>
+    <testcase classname="USER SIGNUP AND LOGIN NEGATIVE TESTING all required fields are missing" name="USER SIGNUP AND LOGIN NEGATIVE TESTING all required fields are missing" time="0.003">
+    </testcase>
+    <testcase classname="USER SIGNUP AND LOGIN NEGATIVE TESTING the password is too long" name="USER SIGNUP AND LOGIN NEGATIVE TESTING the password is too long" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>
