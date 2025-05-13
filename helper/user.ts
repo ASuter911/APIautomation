@@ -3,6 +3,7 @@ import { User } from "./interface";
 import* as supertest from 'supertest'
 const request = supertest('http://localhost:8001/api/v1/')
 
+
 /*const userData:UserData = {
     "name": faker.person.fullName(),
     "email": faker.internet.email(),
@@ -61,8 +62,13 @@ export function login(user:User):Promise<any> {
     })
 }
 
+<<<<<<< HEAD
 export function login2(user){
     return request.post('users/signup').send(user).expect(201)
+=======
+export function login2(user:User){
+    return request.post('users/login').send(user)
+>>>>>>> main
     }
 
     export function deleteFunction(cookie:string):Promise<any> {
@@ -76,3 +82,11 @@ export function login2(user){
     export function deleteFunction2(cookie:string) {
         return request.delete('users/deleteMe').set('Cookie', cookie).expect(200)
         }
+
+    export function updateUser(cookie:string) {
+        return request.patch('users/updateMe').set('Cookie', cookie).send({name: "John Doe"}).expect(200)
+
+    }
+    
+
+   
