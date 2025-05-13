@@ -16,7 +16,7 @@ describe('CREATE TOUR', () => {
         .post('/tours')
         .set('Cookie', cookie)
         .send({
-            name: "TourForn31",
+            name: "TourForn38",
         duration: 10,
         description: "Could be",
         maxGroupSize: 10,
