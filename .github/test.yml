@@ -22,7 +22,7 @@ jobs:
           node-version: '18'
 
       - name: Install npm dependencies
-        run: npm ci
+        run: npm install
 
       - name: Run Jest Tests
         run: npx jest test.spec.ts
