@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="7" failures="0" errors="0" time="2.382">
-  <testsuite name="USER UPDATE - users/updateMe" errors="0" failures="0" skipped="0" timestamp="2025-05-24T22:08:23" time="2.231" tests="7">
-    <testcase classname="USER UPDATE - users/updateMe Should update the user and email" name="USER UPDATE - users/updateMe Should update the user and email" time="0.064">
+<testsuites name="jest tests" tests="6" failures="0" errors="0" time="3.456">
+  <testsuite name="POSTS" errors="0" failures="0" skipped="0" timestamp="2025-05-20T19:24:59" time="3.301" tests="6">
+    <testcase classname="POSTS get request" name="POSTS get request" time="0.202">
     </testcase>
-    <testcase classname="USER UPDATE - users/updateMe Should update the user and photo" name="USER UPDATE - users/updateMe Should update the user and photo" time="0.103">
+    <testcase classname="POSTS POST request" name="POSTS POST request" time="0.477">
     </testcase>
-    <testcase classname="USER UPDATE - users/updateMe Should update the password" name="USER UPDATE - users/updateMe Should update the password" time="0.032">
+    <testcase classname="POSTS PATCH request with title version 1" name="POSTS PATCH request with title version 1" time="0.507">
     </testcase>
-    <testcase classname="USER UPDATE - users/updateMe Successfully update user name and email" name="USER UPDATE - users/updateMe Successfully update user name and email" time="0.064">
+    <testcase classname="POSTS PATCH request with title version 2" name="POSTS PATCH request with title version 2" time="0.267">
     </testcase>
-    <testcase classname="USER UPDATE - users/updateMe Should not update the user with invalid email" name="USER UPDATE - users/updateMe Should not update the user with invalid email" time="0.038">
+    <testcase classname="POSTS PATCH request with title version 3" name="POSTS PATCH request with title version 3" time="0.456">
     </testcase>
-    <testcase classname="USER UPDATE - users/updateMe Should not update the user without token" name="USER UPDATE - users/updateMe Should not update the user without token" time="0.005">
-    </testcase>
-    <testcase classname="USER UPDATE - users/updateMe Should not update the user with invalid token" name="USER UPDATE - users/updateMe Should not update the user with invalid token" time="0.009">
+    <testcase classname="POSTS DELETE request" name="POSTS DELETE request" time="0.406">
     </testcase>
   </testsuite>
 </testsuites>
